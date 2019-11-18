@@ -1,0 +1,6 @@
+name: 'Setup C++'
+description: 'Install C++ problem matchers'
+author: 'Trass3r'
+runs:
+  using: 'node12'
+  main: 'main.js'
