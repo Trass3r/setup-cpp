@@ -1,7 +1,7 @@
 {
 	"problemMatcher": [
 		{
-			"owner": "cpp",
+			"owner": "gcc",
 			"pattern": [
 				{
 					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
@@ -10,6 +10,18 @@
 					"column": 3,
 					"severity": 4,
 					"message": 5
+				}
+			]
+		},
+		{
+			"owner": "msvc",
+			"pattern": [
+				{
+					"regexp": "^(.*)\\((\\d+)\\)\\s+:\\s+(error|warning)\\s+(\\w+\\s*:\\s+.*)$",
+					"file": 1,
+					"line": 2,
+					"severity": 3,
+					"message": 4
 				}
 			]
 		}
