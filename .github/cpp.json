@@ -4,7 +4,7 @@
 			"owner": "gcc",
 			"pattern": [
 				{
-					"regexp": "^([^:]+):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+					"regexp": "^([^:]+):(\\d+):(\\d+):\\s+(warning|error|note):\\s+(.*)$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
@@ -17,7 +17,7 @@
 			"owner": "msvc",
 			"pattern": [
 				{
-					"regexp": "^(.*)\\((\\d+),?(\\d*)\\)\\s+:\\s+(error|warning)\\s+(\\w+\\s*:\\s+.*)$",
+					"regexp": "^(.*)\\((\\d+),?(\\d*)\\)\\s+:\\s+(error|warning|message)\\s+(\\w+\\s*:\\s+.*)$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
