@@ -17,7 +17,7 @@
 			"owner": "msvc",
 			"pattern": [
 				{
-					"regexp": "^(.*)\\((\\d+),?(\\d*)\\)\\s+:\\s+(error|warning|message)\\s+(\\w+\\s*:\\s+.*)$",
+					"regexp": "^(.*)\\((\\d+),?(\\d*)\\)\\s*:\\s*(error|warning|message)\\s+(\\w+\\s*:\\s+.*)$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
