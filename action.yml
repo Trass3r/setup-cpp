@@ -1,6 +1,9 @@
 name: 'Setup C++'
 description: 'Install C++ problem matchers'
 author: 'Trass3r'
+branding:
+  icon: 'life-buoy'
+  color: 'blue'
 runs:
   using: 'node12'
   main: 'main.js'
