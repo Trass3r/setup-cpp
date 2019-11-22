@@ -1,6 +1,6 @@
 # setup-cpp
 
-Github action to setup C++ matchers
+Github action to setup C++ build message matchers
 
 It may be used as a build step in your workflow like this:
 
