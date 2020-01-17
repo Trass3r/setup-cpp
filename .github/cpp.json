@@ -37,6 +37,17 @@
 					"message": 0
 				}
 			]
+		},
+		{
+			"owner": "configure",
+			"pattern": [
+				{
+					"regexp": "(configure): (error): (.+)",
+					"file": 1,
+					"severity": 2,
+					"message": 3
+				}
+			]
 		}
 	]
 }
