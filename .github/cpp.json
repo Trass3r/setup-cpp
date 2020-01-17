@@ -25,6 +25,18 @@
 					"message": 5
 				}
 			]
+		},
+		{
+			"owner": "make",
+			"pattern": [
+				{
+					"regexp": "\\[([^:]+):(\\d+):(.+)\\]\\s(Error)",
+					"file": 1,
+					"line": 2,
+					"severity": 4,
+					"message": 3
+				}
+			]
 		}
 	]
 }
