@@ -39,10 +39,10 @@
 			]
 		},
 		{
-			"owner": "configure",
+			"owner": "configure/lld",
 			"pattern": [
 				{
-					"regexp": "(configure): (error): (.+)",
+					"regexp": "([\\w.]+): (error): (.+)",
 					"file": 1,
 					"severity": 2,
 					"message": 3
