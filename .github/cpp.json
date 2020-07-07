@@ -39,13 +39,13 @@
 			]
 		},
 		{
-			"owner": "configure/lld",
+			"owner": "generic error parser",
 			"pattern": [
 				{
-					"regexp": "([\\w.]+): (error): (.+)",
+					"regexp": ".+ (error): (.+)",
 					"file": 1,
-					"severity": 2,
-					"message": 3
+					"severity": 1,
+					"message": 0
 				}
 			]
 		}
