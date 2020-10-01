@@ -1,4 +1,4 @@
-# setup-cpp
+Setup cpp - an amazing project
 
 Github action to setup C++ build message matchers
 
