@@ -4,11 +4,12 @@
 			"owner": "gcc",
 			"pattern": [
 				{
-					"regexp": "^([^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
+					"regexp": "^([^:]+):(\\d+):(?:(\\d+):)? (?:fatal )?(warning|error|note): (.+?)(?: \\[(.+)\\])?$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
 					"severity": 4,
+					"code": 6,
 					"message": 5
 				}
 			]
@@ -17,12 +18,13 @@
 			"owner": "msvc",
 			"pattern": [
 				{
-					"regexp": "^(.*)\\((\\d+),?(\\d*)\\)\\s*:\\s*(error|warning|message)\\s+(\\w+\\s*:\\s+.*)$",
+					"regexp": "^(.*)\\((\\d+),?(\\d*)\\)\\s*:\\s*(error|warning|message|note) *(\\w\\d+)?:(.*)$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
 					"severity": 4,
-					"message": 5
+					"code": 5,
+					"message": 6
 				}
 			]
 		},
