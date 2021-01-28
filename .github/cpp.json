@@ -41,6 +41,16 @@
 			]
 		},
 		{
+			"owner": "linker",
+			"pattern": [
+				{
+					"regexp": "^(?:.+error ?: )?(.*): ((?:undefined|error LNK\\d+:) .+)$",
+					"file": 1,
+					"message": 2
+				}
+			]
+		},
+		{
 			"owner": "generic error parser",
 			"pattern": [
 				{
