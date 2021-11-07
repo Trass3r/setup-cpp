@@ -1,10 +1,12 @@
+// https://code.visualstudio.com/docs/editor/tasks-appendix
 {
 	"problemMatcher": [
 		{
 			"owner": "gcc",
+			"severity": "notice", // fallback
 			"pattern": [
 				{
-					"regexp": "^([^:]+):(\\d+):(?:(\\d+):)? (?:fatal )?(warning|error|note): (.+?)(?: \\[(.+)\\])?$",
+					"regexp": "^([^:]+):(\\d+):(?:(\\d+):)? (?:fatal )?(?:(warning|error)|note): (.+?)(?: \\[(.+)\\])?$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
@@ -16,9 +18,10 @@
 		},
 		{
 			"owner": "msvc",
+			"severity": "notice", // fallback
 			"pattern": [
 				{
-					"regexp": "^(.*)\\((\\d+),?(\\d*)\\)\\s*:\\s*(error|warning|message|note) *(\\w\\d+)?:(.*)$",
+					"regexp": "^(.*)\\((\\d+),?(\\d*)\\)\\s*:\\s*(?:(error|warning)|message|note) *(\\w\\d+)?:(.*)$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
