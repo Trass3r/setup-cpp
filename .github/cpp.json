@@ -57,7 +57,7 @@
 			"owner": "generic error parser",
 			"pattern": [
 				{
-					"regexp": ".+ (error): (.+)",
+					"regexp": ".+ ([Ee]rror): (.+)",
 					"file": 1,
 					"severity": 1,
 					"message": 0
